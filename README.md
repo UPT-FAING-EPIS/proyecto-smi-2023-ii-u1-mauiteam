@@ -5,3 +5,7 @@
 - Rodrigo Lira Alvarez
 - Rodrigo De la Cruz Choque
 - JuanJose Perez Vizcarra
+## Herramientas
+- VisualCode
+## Tecnologia
+- Maui
