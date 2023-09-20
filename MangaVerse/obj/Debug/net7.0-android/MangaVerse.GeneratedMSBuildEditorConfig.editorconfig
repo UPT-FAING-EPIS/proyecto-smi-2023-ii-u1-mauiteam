@@ -50,17 +50,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.HomePage.
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
 
-[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/LoginPage.xaml]
+[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/login/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.LoginPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.login.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\login\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\login\LoginPage.xaml
 
-[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/RegisterPage.xaml]
+[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/login/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.RegisterPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.login.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\login\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\login\RegisterPage.xaml
 
 [c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/SplashPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

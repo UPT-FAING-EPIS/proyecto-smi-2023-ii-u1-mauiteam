@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MangaVerse.Views.LoginPage">
+
+   <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+            <Image 
+            Source="Resources/Images/logo_hd.jpeg" 
+            HeightRequest="200" 
+            HorizontalOptions="CenterAndExpand" />
+
+            <BoxView 
+            HeightRequest="50" 
+            Color="White" 
+            HorizontalOptions="FillAndExpand" />
+
+            <Entry 
+            Placeholder="Nombre de usuario" 
+            Text="{Binding Username}" />
+
+            <Entry 
+            Placeholder="Contraseña" 
+            Text="{Binding Password}" 
+            IsPassword="True" />
+            
+            <Button 
+            x:Name="LoginBtn"
+            Text="Iniciar sesión" 
+            SemanticProperties.Hint="Login when you click"
+            Command="{Binding LoginCommand}" 
+            BackgroundColor="#F4A460" 
+            TextColor="White" 
+            Clicked="OnLoginClicked"/>
+
+            <BoxView 
+            HeightRequest="15" 
+            Color="White" 
+            HorizontalOptions="FillAndExpand" />
+
+            <Button 
+            x:Name="RegisterBtn"
+            Text="Registrarse" 
+            SemanticProperties.Hint="Register when you click"
+            Command="{Binding RegisterCommand}" 
+            BackgroundColor="#F4A460" 
+            TextColor="White" 
+            Clicked="OnRegisterClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

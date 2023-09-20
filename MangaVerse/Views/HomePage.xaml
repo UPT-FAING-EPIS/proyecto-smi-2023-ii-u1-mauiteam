@@ -3,11 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MangaVerse.Views.HomePage">
 
-    <VerticalStackLayout>
-    <label 
-     Text="holaaaaaaa"
-     VerticalOptions="Center"/>
-    </VerticalStackLayout>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Contenido de menú" />
 
-
+            <!-- Agregar el CarouselView aquí con un tamaño absoluto -->
+            <CarouselView WidthRequest="300" HeightRequest="200">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <!-- Agregar una imagen al carrusel -->
+                        <Image Source="{Binding}" Aspect="AspectFill" />
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

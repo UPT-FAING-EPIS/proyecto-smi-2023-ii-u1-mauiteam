@@ -2,20 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MangaVerse.Views.ToolBarPage">
-
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="hola" Clicked="OnMenuButtonClicked" />
-        <ToolbarItem Text="hola2" Clicked="OnMenuButtonClicked" />
-        <ToolbarItem Text="hola3" Clicked="OnMenuButtonClicked" />
-        <ToolbarItem Text="hola4" Clicked="OnMenuButtonClicked" />
+        <ToolbarItem Text="Opción 1" Command="{Binding Opcion1Command}" />
+        <ToolbarItem Text="Opción 2" Command="{Binding Opcion2Command}" />
     </ContentPage.ToolbarItems>
-    <VerticalStackLayout>
-    <label 
-     Text="menu"
-     VerticalOptions="Center"
-     HorizontalOptions="Center"
-     x:Name="etiquetaMensaje"/>
-    </VerticalStackLayout>
 
-
+    <StackLayout>
+        <!-- Agrega aquí los elementos visuales que desees mostrar en la página -->
+        <Label Text="Contenido de la página de la barra de herramientas" />
+    </StackLayout>
 </ContentPage>
