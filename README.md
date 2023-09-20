@@ -1,4 +1,4 @@
-# MangaExpress
+# MangaVerse
 ## Integrantes:
 - Josue Villanueva Yucra
 - Arnold Cutipa Machaca
