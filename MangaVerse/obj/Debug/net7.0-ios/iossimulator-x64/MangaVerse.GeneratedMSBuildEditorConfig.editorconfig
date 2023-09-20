@@ -57,3 +57,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/SplashPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.SplashPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SplashPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SplashPage.xaml
+
+[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/ToolBarPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.ToolBarPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ToolBarPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ToolBarPage.xaml

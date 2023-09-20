@@ -12,7 +12,7 @@
 
             <BoxView 
             HeightRequest="50" 
-            Color="Gray" 
+            Color="White" 
             HorizontalOptions="FillAndExpand" />
 
             <Entry 
@@ -35,7 +35,7 @@
 
             <BoxView 
             HeightRequest="15" 
-            Color="Gray" 
+            Color="White" 
             HorizontalOptions="FillAndExpand" />
 
             <Button 
