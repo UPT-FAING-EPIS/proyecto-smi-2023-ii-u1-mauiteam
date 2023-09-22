@@ -2046,3 +2046,11 @@ c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\stamp\_G
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\naruto.jpg
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\onepiece.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\kimetsu.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\boruto.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\dbs.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\skeletondouble.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\tokyoghoulre.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\tsurukoreturnsthefavor.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\wildstrawberry.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\diasporaiser.jpg

@@ -11,11 +11,45 @@
             <CarouselView x:Name="carouselView" ItemsSource="{Binding ImageItems}">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
-            <!-- Aquí definiremos el diseño de cada elemento del carrusel -->
-                    <Image Source="{Binding ImagePath}" Aspect="AspectFill" />
+                        <!-- Aquí definiremos el diseño de cada elemento del carrusel -->
+                        <Image Source="{Binding ImagePath}" Aspect="AspectFill" />
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
+
+<Label Text="Nuevos Capítulos" />
+
+<ListView ItemsSource="{Binding Mangas}">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="{Binding ImagePath}" WidthRequest="50" HeightRequest="50" />
+                    <StackLayout>
+                        <Label Text="{Binding Title}" FontAttributes="Bold" />
+                        <Label Text="{Binding Author}" FontAttributes="Italic" />
+
+                        <!-- Lista de capítulos -->
+                        <ListView ItemsSource="{Binding Chapters}" HorizontalOptions="Start">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Capítulo" />
+                                            <Label Text="{Binding Number}" />
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+

@@ -1,8 +1,3 @@
-using System;
-using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using Microsoft.Maui.Controls;
-
 namespace MangaVerse.Views
 {
     public partial class HomePage : ContentPage
