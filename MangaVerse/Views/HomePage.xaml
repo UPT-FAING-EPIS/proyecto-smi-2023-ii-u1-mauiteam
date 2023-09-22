@@ -4,6 +4,7 @@
              x:Class="MangaVerse.Views.HomePage">
 
     <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
             <Label Text="Contenido de menú" />
 
@@ -28,48 +29,77 @@
                 </Grid.RowDefinitions>
 
                 <!-- Primera columna de imágenes y detalles -->
-                <StackLayout Grid.Row="0" Orientation="Horizontal">
-                    <Image Source="{Binding Mangas[0].ImagePath}" WidthRequest="80" HeightRequest="80" />
+                <StackLayout Grid.Row="0" Orientation="Horizontal" Padding="20,5,0,30">
+                    <Image Source="{Binding Mangas[0].ImagePath}" WidthRequest="140" HeightRequest="140" />
                     <StackLayout>
-                        <Label Text="{Binding Mangas[0].Title}" FontAttributes="Bold" />
-                        <Label Text="{Binding Mangas[0].Author}" FontAttributes="Italic" />
+                        <Label Text="{Binding Mangas[0].Title}" FontAttributes="Bold" Margin="-115,180,-50,0"/>
+                        <Label Text="{Binding Mangas[0].Author}" FontAttributes="Italic" Margin="-110,0,0,0"/>
                     </StackLayout>
-                    <Image Source="{Binding Mangas[1].ImagePath}" WidthRequest="80" HeightRequest="80" />
+                    <Image Source="{Binding Mangas[1].ImagePath}" WidthRequest="140" HeightRequest="140" />
                     <StackLayout>
-                        <Label Text="{Binding Mangas[1].Title}" FontAttributes="Bold" />
-                        <Label Text="{Binding Mangas[1].Author}" FontAttributes="Italic" />
+                        <Label Text="{Binding Mangas[1].Title}" FontAttributes="Bold" Margin="-110,180,-50,0"/>
+                        <Label Text="{Binding Mangas[1].Author}" FontAttributes="Italic" Margin="-110,0,0,0"/>
                     </StackLayout>
                 </StackLayout>
 
                 <!-- Segunda columna de imágenes y detalles -->
-                <StackLayout Grid.Row="1" Orientation="Horizontal">
-                    <Image Source="{Binding Mangas[2].ImagePath}" WidthRequest="80" HeightRequest="80" />
+                <StackLayout Grid.Row="1" Orientation="Horizontal" Padding="20,-40,0,30">
+                    <Image Source="{Binding Mangas[2].ImagePath}" WidthRequest="140" HeightRequest="140" />
                     <StackLayout>
-                        <Label Text="{Binding Mangas[2].Title}" FontAttributes="Bold" />
-                        <Label Text="{Binding Mangas[2].Author}" FontAttributes="Italic" />
+                        <Label Text="{Binding Mangas[2].Title}" FontAttributes="Bold" Margin="-110,180,-50,0"/>
+                        <Label Text="{Binding Mangas[2].Author}" FontAttributes="Italic" Margin="-110,0,0,0"/>
                     </StackLayout>
-                    <Image Source="{Binding Mangas[3].ImagePath}" WidthRequest="80" HeightRequest="80" />
+                    <Image Source="{Binding Mangas[3].ImagePath}" WidthRequest="140" HeightRequest="140" />
                     <StackLayout>
-                        <Label Text="{Binding Mangas[3].Title}" FontAttributes="Bold" />
-                        <Label Text="{Binding Mangas[3].Author}" FontAttributes="Italic" />
+                        <Label Text="{Binding Mangas[3].Title}" FontAttributes="Bold" Margin="-110,180,-50,0"/>
+                        <Label Text="{Binding Mangas[3].Author}" FontAttributes="Italic" Margin="-110,0,0,0"/>
                     </StackLayout>
                 </StackLayout>
 
                 <!-- Tercera columna de imágenes y detalles -->
-                <StackLayout Grid.Row="2" Orientation="Horizontal">
-                    <Image Source="{Binding Mangas[4].ImagePath}" WidthRequest="80" HeightRequest="80" />
+                <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="20,-40,0,30">
+                    <Image Source="{Binding Mangas[4].ImagePath}" WidthRequest="140" HeightRequest="140" />
                     <StackLayout>
-                        <Label Text="{Binding Mangas[4].Title}" FontAttributes="Bold" />
-                        <Label Text="{Binding Mangas[4].Author}" FontAttributes="Italic" />
+                        <Label Text="{Binding Mangas[4].Title}" FontAttributes="Bold" Margin="-110,180,-50,0"/>
+                        <Label Text="{Binding Mangas[4].Author}" FontAttributes="Italic" Margin="-90,0,0,0"/>
                     </StackLayout>
-                    <Image Source="{Binding Mangas[5].ImagePath}" WidthRequest="80" HeightRequest="80" />
+                    <Image Source="{Binding Mangas[5].ImagePath}" WidthRequest="140" HeightRequest="140" />
                     <StackLayout>
-                        <Label Text="{Binding Mangas[5].Title}" FontAttributes="Bold" />
-                        <Label Text="{Binding Mangas[5].Author}" FontAttributes="Italic" />
+                        <Label Text="{Binding Mangas[5].Title}" FontAttributes="Bold" Margin="-110,180,-50,0"/>
+                        <Label Text="{Binding Mangas[5].Author}" FontAttributes="Italic" Margin="-90,0,0,0" />
                     </StackLayout>
                 </StackLayout>
             </Grid>
-
+            
+            <Label Text="Populares" />
+            <ListView ItemsSource="{Binding TopMangas}">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <!-- Contenido de cada top manga aquí -->
+                <StackLayout>
+                    <Image Source="{Binding ImagePath}" WidthRequest="50" HeightRequest="50" />
+                    <Label Text="{Binding Title}" FontAttributes="Bold" />
+                    <Label Text="{Binding Author}" FontAttributes="Italic" />
+                    <!-- Lista de capítulos -->
+                    <ListView ItemsSource="{Binding Chapters}" HorizontalOptions="Start">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Capítulo" />
+                                        <Label Text="{Binding Number}" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
         </StackLayout>
+    </ScrollView>
     </ContentPage.Content>
 </ContentPage>

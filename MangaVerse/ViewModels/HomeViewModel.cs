@@ -8,12 +8,16 @@ namespace MangaVerse
     {
         public ObservableCollection<CarouselItem> ImageItems { get; set; }
         public ObservableCollection<Manga> Mangas { get; set; } // Agrega la propiedad para los mangas
+        public ObservableCollection<Manga> TopMangas { get; set; }
 
         public HomeViewModel()
         {
-            ImageItems = new ObservableCollection<CarouselItem>();
-            LoadImages();
-            LoadMangas(); // Llama a la función para cargar mangas
+    ImageItems = new ObservableCollection<CarouselItem>();
+    LoadImages();
+    Mangas = new ObservableCollection<Manga>(); // Inicializa Mangas
+    LoadMangas();
+    TopMangas = new ObservableCollection<Manga>(); // Inicializa TopMangas
+    LoadTopMangas();
         }
 
         private void LoadImages()
@@ -33,8 +37,8 @@ namespace MangaVerse
                 new Manga
                 {
                     ImagePath = "diasporaiser.jpg",
-                    Title = "Manga 1",
-                    Author = "Autor 1",
+                    Title = "Diasporaiser",
+                    Author = "Ondori Nukui",
                     Chapters = new ObservableCollection<Chapter>
                     {
                         new Chapter { Title = "Capítulo 1", Number = 1 },
@@ -44,8 +48,8 @@ namespace MangaVerse
                 new Manga
                 {
                     ImagePath = "tsurukoreturnsthefavor.jpg",
-                    Title = "Manga 1",
-                    Author = "Autor 1",
+                    Title = "Tsuruko Returns the Favor",
+                    Author = "Yokoyama Hidari",
                     Chapters = new ObservableCollection<Chapter>
                     {
                         new Chapter { Title = "Capítulo 1", Number = 1 },
@@ -55,8 +59,8 @@ namespace MangaVerse
                 new Manga
                 {
                     ImagePath = "wildstrawberry.jpg",
-                    Title = "Manga 1",
-                    Author = "Autor 1",
+                    Title = "Wild Strawberry",
+                    Author = "Ire Yonemoto",
                     Chapters = new ObservableCollection<Chapter>
                     {
                         new Chapter { Title = "Capítulo 1", Number = 1 },
@@ -66,8 +70,8 @@ namespace MangaVerse
                 new Manga
                 {
                     ImagePath = "skeletondouble.jpg",
-                    Title = "Manga 1",
-                    Author = "Autor 1",
+                    Title = "Skeleton Double",
+                    Author = "Tokaku Kondo",
                     Chapters = new ObservableCollection<Chapter>
                     {
                         new Chapter { Title = "Capítulo 1", Number = 1 },
@@ -77,8 +81,8 @@ namespace MangaVerse
                 new Manga
                 {
                     ImagePath = "tokyoghoulre.jpg",
-                    Title = "Manga 1",
-                    Author = "Autor 1",
+                    Title = "Tokyo Ghoul: re",
+                    Author = "Sui Ishida",
                     Chapters = new ObservableCollection<Chapter>
                     {
                         new Chapter { Title = "Capítulo 1", Number = 1 },
@@ -88,8 +92,8 @@ namespace MangaVerse
                 new Manga
                 {
                     ImagePath = "boruto.jpg",
-                    Title = "Manga 1",
-                    Author = "Autor 1",
+                    Title = "BORUTO - TWO BLUE VORTEX",
+                    Author = "MASASHI KISHIMOTO / MIKIO IKEMOTO",
                     Chapters = new ObservableCollection<Chapter>
                     {
                         new Chapter { Title = "Capítulo 1", Number = 1 },
@@ -99,6 +103,16 @@ namespace MangaVerse
                 // Agrega más mangas aquí
             };
         }
+        
+        private void LoadTopMangas()
+        {
+            // Carga los top mangas en la colección TopMangas
+    TopMangas.Add(new Manga { ImagePath = "diasporaiser.jpg"});
+    TopMangas.Add(new Manga { ImagePath = "tsurukoreturnsthefavor.jpg"});
+    TopMangas.Add(new Manga { ImagePath = "wildstrawberry.jpg"});
+            // Agrega los 5 mangas más populares aquí
+        }
+        
 
         // Implementa INotifyPropertyChanged para notificar a la vista de cambios en las propiedades
         public event PropertyChangedEventHandler PropertyChanged;
