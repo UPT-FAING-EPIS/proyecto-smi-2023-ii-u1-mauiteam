@@ -2045,3 +2045,4 @@ c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\stamp\_G
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\naruto.jpg
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\resizetizer\r\drawable\onepiece.jpg

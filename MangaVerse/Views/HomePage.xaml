@@ -8,11 +8,11 @@
             <Label Text="Contenido de menú" />
 
             <!-- Agregar el CarouselView aquí con un tamaño absoluto -->
-            <CarouselView WidthRequest="300" HeightRequest="200">
+            <CarouselView x:Name="carouselView" ItemsSource="{Binding ImageItems}">
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
-                        <!-- Agregar una imagen al carrusel -->
-                        <Image Source="{Binding}" Aspect="AspectFill" />
+            <!-- Aquí definiremos el diseño de cada elemento del carrusel -->
+                    <Image Source="{Binding ImagePath}" Aspect="AspectFill" />
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
