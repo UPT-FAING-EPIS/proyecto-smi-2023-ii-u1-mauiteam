@@ -12,6 +12,7 @@ namespace MangaVerse.Views
             viewModel = new HomeViewModel();
             BindingContext = viewModel;
             StartCarouselAutoScroll();
+            
         }
 
         private async void StartCarouselAutoScroll()

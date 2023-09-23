@@ -26,12 +26,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/MainPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
 [c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Resources.Styles.Colors.xaml
@@ -62,14 +56,14 @@ build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.login.Reg
 build_metadata.AdditionalFiles.TargetPath = Views\login\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\login\RegisterPage.xaml
 
+[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
+
 [c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/SplashPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.SplashPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SplashPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SplashPage.xaml
-
-[c:/proyecto-smi-2023-ii-u1-mauiteam/MangaVerse/Views/ToolBarPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MangaVerse.Views.ToolBarPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\ToolBarPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\ToolBarPage.xaml

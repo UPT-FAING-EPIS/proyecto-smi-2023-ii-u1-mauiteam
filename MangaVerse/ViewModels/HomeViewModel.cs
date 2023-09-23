@@ -8,7 +8,7 @@ namespace MangaVerse
     {
         public ObservableCollection<CarouselItem> ImageItems { get; set; }
         public ObservableCollection<Manga> Mangas { get; set; } // Agrega la propiedad para los mangas
-        public ObservableCollection<Manga> TopMangas { get; set; }
+        public ObservableCollection<TopManga> TopMangas { get; set; }
 
         public HomeViewModel()
         {
@@ -16,7 +16,7 @@ namespace MangaVerse
     LoadImages();
     Mangas = new ObservableCollection<Manga>(); // Inicializa Mangas
     LoadMangas();
-    TopMangas = new ObservableCollection<Manga>(); // Inicializa TopMangas
+    TopMangas = new ObservableCollection<TopManga>(); // Inicializa TopMangas
     LoadTopMangas();
         }
 
@@ -104,14 +104,34 @@ namespace MangaVerse
             };
         }
         
-        private void LoadTopMangas()
-        {
-            // Carga los top mangas en la colección TopMangas
-    TopMangas.Add(new Manga { ImagePath = "diasporaiser.jpg"});
-    TopMangas.Add(new Manga { ImagePath = "tsurukoreturnsthefavor.jpg"});
-    TopMangas.Add(new Manga { ImagePath = "wildstrawberry.jpg"});
-            // Agrega los 5 mangas más populares aquí
-        }
+    private void LoadTopMangas()
+    {
+            TopMangas = new ObservableCollection<TopManga>
+            {
+                new TopManga
+                {
+                    Image = "diasporaiser.jpg",
+                    Top = "#TOP 1",
+                    Title = "Diasporaiser",
+                    Author = "Ondori Nukui",
+                },
+                new TopManga
+                {
+                    Image = "tsurukoreturnsthefavor.jpg",
+                    Top = "#TOP 2",
+                    Title = "Tsuruko Returns the Favor",
+                    Author = "Yokoyama Hidari",
+
+                },
+                new TopManga
+                {
+                    Image = "wildstrawberry.jpg",
+                    Top = "#TOP 3",
+                    Title = "Wild Strawberry",
+                    Author = "Ire Yonemoto",
+                },
+            };
+    }
         
 
         // Implementa INotifyPropertyChanged para notificar a la vista de cambios en las propiedades
