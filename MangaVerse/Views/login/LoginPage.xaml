@@ -1,52 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MangaVerse.Views.LoginPage">
+             x:Class="MangaVerse.Views.LoginPage"
+             BackgroundColor="#191919">
 
-   <ContentPage.Content>
+    <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
-            <Image 
-            Source="Resources/Images/logo_hd.jpeg" 
-            HeightRequest="200" 
-            HorizontalOptions="CenterAndExpand" />
+            <!-- Cuadro para el logo con fondo azul -->
+            <StackLayout BackgroundColor="#191919" Padding="30">
+                <Image 
+                    Source="Resources/Images/login.jpg" 
+                    HeightRequest="150" 
+                    HorizontalOptions="CenterAndExpand" 
+                    Margin="0,0,0,30"/>
+            </StackLayout>
 
-            <BoxView 
-            HeightRequest="50" 
-            Color="White" 
-            HorizontalOptions="FillAndExpand" />
+            <!-- Cuadro para los campos de entrada y botones con fondo gris -->
+            <StackLayout BackgroundColor="#191919" Padding="20">
 
-            <Entry 
-            Placeholder="Nombre de usuario" 
-            Text="{Binding Username}" />
-
-            <Entry 
-            Placeholder="Contraseña" 
+    <Frame BorderColor="#87468b" CornerRadius="3" Padding="5" Margin="0,0,0,10" BackgroundColor="#191919">
+        <Entry 
+            Placeholder="Username" 
+            Text="{Binding Username}" 
+            TextColor="White" />
+    </Frame>
+    
+    <Frame BorderColor="#87468b" CornerRadius="3" Padding="5" Margin="0,0,0,10" BackgroundColor="#191919">
+        <Entry 
+            Placeholder="Password"  
             Text="{Binding Password}" 
-            IsPassword="True" />
-            
-            <Button 
-            x:Name="LoginBtn"
-            Text="Iniciar sesión" 
-            SemanticProperties.Hint="Login when you click"
-            Command="{Binding LoginCommand}" 
-            BackgroundColor="#F4A460" 
-            TextColor="White" 
-            Clicked="OnLoginClicked"/>
-
-            <BoxView 
-            HeightRequest="15" 
-            Color="White" 
-            HorizontalOptions="FillAndExpand" />
-
-            <Button 
-            x:Name="RegisterBtn"
-            Text="Registrarse" 
-            SemanticProperties.Hint="Register when you click"
-            Command="{Binding RegisterCommand}" 
-            BackgroundColor="#F4A460" 
-            TextColor="White" 
-            Clicked="OnRegisterClicked"/>
+            IsPassword="True" 
+            TextColor="White" />
+    </Frame>
+                
+                <Button 
+                    x:Name="LoginBtn"
+                    Text="Iniciar sesión" 
+                    SemanticProperties.Hint="Login when you click"
+                    Command="{Binding LoginCommand}" 
+                    BackgroundColor="#a3c12b" 
+                    TextColor="White" 
+                    Clicked="OnLoginClicked"
+                    Margin="0,0,0,10"/>
+                <Button 
+                    x:Name="RegisterBtn"
+                    Text="Registrarse" 
+                    SemanticProperties.Hint="Register when you click"
+                    Command="{Binding RegisterCommand}" 
+                    BackgroundColor="#a3c12b" 
+                    TextColor="White" 
+                    Clicked="OnRegisterClicked"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
-
 </ContentPage>

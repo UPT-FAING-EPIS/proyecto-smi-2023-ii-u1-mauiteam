@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
             <!-- Agrega tu logotipo aquí -->
-            <Image Source="Resources/Images/logo_hd.jpeg" HeightRequest="200" WidthRequest="200" />
+            <Image Source="Resources/Images/logo_v2final.png" HeightRequest="200" WidthRequest="200" />
             <ActivityIndicator IsRunning="True" Color="Green" />
         </StackLayout>
     </ContentPage.Content>
