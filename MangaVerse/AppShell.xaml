@@ -22,18 +22,18 @@
         Shell.FlyoutItemIsVisible="False"/>
     <TabBar FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
-        Title="Home"
+        Title="Inicio"
         ContentTemplate="{DataTemplate vistas:HomePage}"
         Route="HomePage" />
 
         <ShellContent
-        Title="Profile"
+        Title="Perfil"
         ContentTemplate="{DataTemplate vistas:ProfilePage}"
         Route="ProfilePage" />
 
         <ShellContent
-        Title="Profile"
-        ContentTemplate="{DataTemplate vistas:ProfilePage}"
+        Title="Descubre"
+        ContentTemplate="{DataTemplate vistas:DescubrePage}"
         Route="ProfilePage" />
     </TabBar>
 </Shell>

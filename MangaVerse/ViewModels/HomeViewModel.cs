@@ -7,31 +7,31 @@ namespace MangaVerse
     public class HomeViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<CarouselItem> ImageItems { get; set; }
-        public ObservableCollection<Manga> Mangas { get; set; } // Agrega la propiedad para los mangas
+        public ObservableCollection<Manga> Mangas { get; set; }
         public ObservableCollection<TopManga> TopMangas { get; set; }
 
         public HomeViewModel()
         {
-    ImageItems = new ObservableCollection<CarouselItem>();
-    LoadImages();
-    Mangas = new ObservableCollection<Manga>(); // Inicializa Mangas
-    LoadMangas();
-    TopMangas = new ObservableCollection<TopManga>(); // Inicializa TopMangas
-    LoadTopMangas();
+            ImageItems = new ObservableCollection<CarouselItem>();
+            Mangas = new ObservableCollection<Manga>();
+            TopMangas = new ObservableCollection<TopManga>();
+
+            LoadImages();
+            LoadMangas();
+            LoadTopMangas();
         }
 
         private void LoadImages()
         {
-            // Carga tus imágenes como lo estabas haciendo
-            ImageItems.Add(new CarouselItem { ImagePath = "naruto.jpg" });
-            ImageItems.Add(new CarouselItem { ImagePath = "onepiece.jpg" });
-            ImageItems.Add(new CarouselItem { ImagePath = "kimetsu.jpg" });
-            // Agrega más imágenes aquí
+            ImageItems.Add(new CarouselItem { ImageCarousel = "borutoc.jpg" });
+            ImageItems.Add(new CarouselItem { ImageCarousel = "one.jpg" });
+            ImageItems.Add(new CarouselItem { ImageCarousel = "jujutsu.jpg" });
+            ImageItems.Add(new CarouselItem { ImageCarousel = "bluelock.jpg" });
+            ImageItems.Add(new CarouselItem { ImageCarousel = "man.jpg" });
         }
 
         private void LoadMangas()
         {
-            // Carga tus mangas aquí, asegúrate de que los nombres de las propiedades coincidan con tus datos reales
             Mangas = new ObservableCollection<Manga>
             {
                 new Manga
@@ -100,12 +100,11 @@ namespace MangaVerse
                         new Chapter { Title = "Capítulo 2", Number = 2 }
                     }
                 },
-                // Agrega más mangas aquí
             };
         }
-        
-    private void LoadTopMangas()
-    {
+
+        private void LoadTopMangas()
+        {
             TopMangas = new ObservableCollection<TopManga>
             {
                 new TopManga
@@ -130,11 +129,10 @@ namespace MangaVerse
                     Title = "Wild Strawberry",
                     Author = "Ire Yonemoto",
                 },
+                // Agrega más mangas populares aquí
             };
-    }
-        
+        }
 
-        // Implementa INotifyPropertyChanged para notificar a la vista de cambios en las propiedades
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {

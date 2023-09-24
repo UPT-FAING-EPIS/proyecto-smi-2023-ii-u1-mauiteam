@@ -9,10 +9,11 @@ namespace MangaVerse.Views
             InitializeComponent();
              _authService = authService;
         }
-        private void OnLoginClicked(object sender, EventArgs e)
+        private async void OnLogoutClicked(object sender, EventArgs e)
         {
             _authService.Logout();
-            Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
+
+            await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
         }
     }
 }

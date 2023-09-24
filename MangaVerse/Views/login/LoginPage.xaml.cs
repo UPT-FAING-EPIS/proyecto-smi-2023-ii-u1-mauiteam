@@ -20,6 +20,10 @@ namespace MangaVerse.Views;
     private async void OnLoginClicked(object sender, EventArgs e)
     {
         _authService.Login();
+        var splashPage = new SplashPage(_authService);
+
+    // Mostrar la SplashPage
+        await Navigation.PushAsync(splashPage);
         await Task.Delay(2000);
 		await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
     }

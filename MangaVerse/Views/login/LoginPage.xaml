@@ -4,9 +4,11 @@
              x:Class="MangaVerse.Views.LoginPage"
              BackgroundColor="#191919">
 
+    <!-- Contenido de la página -->
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
-            <!-- Cuadro para el logo con fondo azul -->
+
+            <!-- Sección del logo -->
             <StackLayout BackgroundColor="#191919" Padding="30">
                 <Image 
                     Source="Resources/Images/login.jpg" 
@@ -15,24 +17,27 @@
                     Margin="0,0,0,30"/>
             </StackLayout>
 
-            <!-- Cuadro para los campos de entrada y botones con fondo gris -->
+            <!-- Sección de campos de entrada y botones -->
             <StackLayout BackgroundColor="#191919" Padding="20">
 
-    <Frame BorderColor="#87468b" CornerRadius="3" Padding="5" Margin="0,0,0,10" BackgroundColor="#191919">
-        <Entry 
-            Placeholder="Username" 
-            Text="{Binding Username}" 
-            TextColor="White" />
-    </Frame>
+                <!-- Cuadro de entrada para el nombre de usuario -->
+                <Frame BorderColor="#87468b" CornerRadius="3" Padding="5" Margin="0,0,0,10" BackgroundColor="#191919">
+                    <Entry 
+                        Placeholder="Username" 
+                        Text="{Binding Username}" 
+                        TextColor="White" />
+                </Frame>
     
-    <Frame BorderColor="#87468b" CornerRadius="3" Padding="5" Margin="0,0,0,10" BackgroundColor="#191919">
-        <Entry 
-            Placeholder="Password"  
-            Text="{Binding Password}" 
-            IsPassword="True" 
-            TextColor="White" />
-    </Frame>
+                <!-- Cuadro de entrada para la contraseña -->
+                <Frame BorderColor="#87468b" CornerRadius="3" Padding="5" Margin="0,0,0,10" BackgroundColor="#191919">
+                    <Entry 
+                        Placeholder="Password"  
+                        Text="{Binding Password}" 
+                        IsPassword="True" 
+                        TextColor="White" />
+                </Frame>
                 
+                <!-- Botón de inicio de sesión -->
                 <Button 
                     x:Name="LoginBtn"
                     Text="Iniciar sesión" 
@@ -42,6 +47,8 @@
                     TextColor="White" 
                     Clicked="OnLoginClicked"
                     Margin="0,0,0,10"/>
+                
+                <!-- Botón de registro -->
                 <Button 
                     x:Name="RegisterBtn"
                     Text="Registrarse" 

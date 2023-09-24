@@ -15,10 +15,6 @@ namespace MangaVerse.Services
         {
             Preferences.Default.Set<bool>(AuthStateKey, true);
         }
-        // public void Register()
-        // {
-        //     Preferences.Default.Set<bool>(AuthStateKey, true);
-        // }
         public void Logout() 
         {
             Preferences.Default.Remove(AuthStateKey);
