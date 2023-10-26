@@ -1,4 +1,5 @@
 ﻿using MangaVerse.Services;
+using MangaVerse.Services.api;
 using MangaVerse.Views;
 using Microsoft.Extensions.Logging;
 
@@ -28,6 +29,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<LoginPage>();
 		builder.Services.AddTransient<ProfilePage>();
 		builder.Services.AddTransient<DescubrePage>();
+		builder.Services.AddScoped<IMangaSearch, MangaSearch>();
 
 		return builder.Build();
 	}

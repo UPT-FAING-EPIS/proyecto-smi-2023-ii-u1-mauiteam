@@ -1,4 +1,4 @@
-namespace MangaVerse.Services
+    namespace MangaVerse.Services
 {
     public class AuthService
     {
