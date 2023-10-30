@@ -30,6 +30,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<ProfilePage>();
 		builder.Services.AddTransient<DescubrePage>();
 		builder.Services.AddScoped<IMangaSearch, MangaSearch>();
+		builder.Services.AddScoped<IMangaTop, MangaTop>();
 
 		return builder.Build();
 	}
