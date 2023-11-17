@@ -8,17 +8,14 @@ namespace MangaVerse
     {
         public ObservableCollection<CarouselItem> ImageItems { get; set; }
         public ObservableCollection<Manga> Mangas { get; set; }
-        public ObservableCollection<TopManga> TopMangas { get; set; }
 
         public HomeViewModel()
         {
             ImageItems = new ObservableCollection<CarouselItem>();
             Mangas = new ObservableCollection<Manga>();
-            TopMangas = new ObservableCollection<TopManga>();
 
             LoadImages();
             LoadMangas();
-            LoadTopMangas();
         }
 
         private void LoadImages()
@@ -100,36 +97,6 @@ namespace MangaVerse
                         new Chapter { Title = "Capítulo 2", Number = 2 }
                     }
                 },
-            };
-        }
-
-        private void LoadTopMangas()
-        {
-            TopMangas = new ObservableCollection<TopManga>
-            {
-                new TopManga
-                {
-                    Image = "diasporaiser.jpg",
-                    Top = "#TOP 1",
-                    Title = "Diasporaiser",
-                    Author = "Ondori Nukui",
-                },
-                new TopManga
-                {
-                    Image = "tsurukoreturnsthefavor.jpg",
-                    Top = "#TOP 2",
-                    Title = "Tsuruko Returns the Favor",
-                    Author = "Yokoyama Hidari",
-
-                },
-                new TopManga
-                {
-                    Image = "wildstrawberry.jpg",
-                    Top = "#TOP 3",
-                    Title = "Wild Strawberry",
-                    Author = "Ire Yonemoto",
-                },
-                // Agrega más mangas populares aquí
             };
         }
 

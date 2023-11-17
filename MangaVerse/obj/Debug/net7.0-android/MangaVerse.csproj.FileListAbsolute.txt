@@ -2090,3 +2090,12 @@ c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.pdb
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLite-net.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.batteries_v2.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.core.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.lib.e_sqlite3.android.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.nativelibrary.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.provider.dynamic_cdecl.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll

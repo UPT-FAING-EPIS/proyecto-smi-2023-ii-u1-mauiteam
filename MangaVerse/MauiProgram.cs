@@ -2,7 +2,6 @@
 using MangaVerse.Services.api;
 using MangaVerse.Views;
 using Microsoft.Extensions.Logging;
-
 namespace MangaVerse;
 
 public static class MauiProgram
@@ -22,7 +21,6 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-
 		builder.Services.AddTransient<AuthService>();
 		builder.Services.AddTransient<HomePage>();
 		builder.Services.AddTransient<SplashPage>();
