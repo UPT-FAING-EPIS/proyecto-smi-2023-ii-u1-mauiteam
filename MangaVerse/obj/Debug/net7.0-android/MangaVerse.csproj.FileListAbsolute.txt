@@ -2099,3 +2099,10 @@ c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.nativelibrary.dll
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.provider.dynamic_cdecl.dll
 c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\Firebase.Auth.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\Firebase.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\Firebase.Storage.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\LiteDB.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\Newtonsoft.Json.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\System.Reactive.dll
+c:\proyecto-smi-2023-ii-u1-mauiteam\MangaVerse\obj\Debug\net7.0-android\android\assets\System.ServiceModel.dll
