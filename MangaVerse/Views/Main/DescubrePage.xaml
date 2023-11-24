@@ -8,7 +8,7 @@
       <ScrollView>
         <StackLayout>
                 <StackLayout Spacing="20" Padding="20">
-                    <Entry x:Name="searchEntry" Placeholder="Busca tu manga" />
+                    <Entry x:Name="searchEntry" Placeholder="Busca tu manga" TextColor="White" />
                     <Button Text="Buscar" Clicked="OnSearchClicked" BackgroundColor="#a3c12b" />
                     <!--<ActivityIndicator x:Name="loading" HeightRequest="30" Color="Blue" IsRunning="True" IsVisible="false" />-->
                 </StackLayout>

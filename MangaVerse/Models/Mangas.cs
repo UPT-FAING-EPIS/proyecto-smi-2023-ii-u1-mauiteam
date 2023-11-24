@@ -7,7 +7,7 @@ namespace MangaVerse.Models
         public string Title { get; set; }
         public string Author { get; set; }
         public ObservableCollection<Chapter> Chapters { get; set; }
-        public string ImagePath { get; set; } // Agregar la propiedad ImagePath
+        public string ImagePath { get; set; }
     }
 
     public class Chapter

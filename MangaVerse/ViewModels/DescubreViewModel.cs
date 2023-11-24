@@ -1,67 +1,30 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MangaVerse.Models;
+using MangaVerse.Services.api;
 
 namespace MangaVerse
 {
     public class DescubreViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<Descubre> DescubreItems { get; set; }
 
-        public DescubreViewModel()
+        private readonly IMangaSearch _mangaSearch;
+        public ObservableCollection<MangasSearch> SearchResults { get; set; } = new ObservableCollection<MangasSearch>();
+
+        public DescubreViewModel(IMangaSearch searchService)
         {
-            DescubreItems = new ObservableCollection<Descubre>();
-            DescubreImages();
+            _mangaSearch = searchService;
         }
-
-        private void DescubreImages()
+        public async Task SearchMangas(string keyword)
         {
-            DescubreItems = new ObservableCollection<Descubre>
+            var searchResults = await _mangaSearch.Search(keyword);
+            SearchResults.Clear();
+            foreach (var result in searchResults)
             {
-                new Descubre
-                {
-                    Image = "diasporaiser.jpg",
-                    Title = "Diasporaiser",
-                    Author = "Ondori Nukui",
-                    Descripcion = "asdasdasdasdasdasdasdasdas",
-                },
-                new Descubre
-                {
-                    Image = "tsurukoreturnsthefavor.jpg",
-                    Title = "Tsuruko Returns the Favor",
-                    Author = "Yokoyama Hidari",
-                    Descripcion = "asdasdasdasdasdasdasdasdas",
-                },
-                new Descubre
-                {
-                    Image = "wildstrawberry.jpg",
-                    Title = "Wild Strawberry",
-                    Author = "Ire Yonemoto",
-                    Descripcion = "asdasdasdasdasdasdasdasdas",
-                },
-                new Descubre
-                {
-                    Image = "diasporaiser.jpg",
-                    Title = "Diasporaiser",
-                    Author = "Ondori Nukui",
-                    Descripcion = "asdasdasdasdasdasdasdasdas",
-                },
-                new Descubre
-                {
-                    Image = "tsurukoreturnsthefavor.jpg",
-                    Title = "Tsuruko Returns the Favor",
-                    Author = "Yokoyama Hidari",
-                    Descripcion = "asdasdasdasdasdasdasdasdas",
-                },
-                new Descubre
-                {
-                    Image = "wildstrawberry.jpg",
-                    Title = "Wild Strawberry",
-                    Author = "Ire Yonemoto",
-                    Descripcion = "asdasdasdasdasdasdasdasdas",
-                },
-            };
+                SearchResults.Add(result);
+            }
         }
+
 
         // INotifyPropertyChanged para notificar a la vista de cambios en las propiedades
         public event PropertyChangedEventHandler PropertyChanged;

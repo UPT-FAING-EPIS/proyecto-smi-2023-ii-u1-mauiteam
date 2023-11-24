@@ -19,5 +19,6 @@
         {
             Preferences.Default.Remove(AuthStateKey);
         }
+        
     }
 }
