@@ -1,3 +1,5 @@
+using MangaVerse.Services;
+
 namespace MangaVerse.Views
 {
     public partial class RegisterPage : ContentPage
@@ -8,14 +10,14 @@ namespace MangaVerse.Views
         }
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
-            ConexionFirebase conexionFirebase = new ConexionFirebase();
+            AuthService authService = new AuthService();
             string email = emailEntry.Text;
             string password = passwordEntry.Text;
-            string username = usernameEntry.Text; // Suponiendo que hay un campo para el nombre
+            string username = usernameEntry.Text;
 
             try
             {
-                var userCredential = await conexionFirebase.CrearUsuario(email, password, username);
+                var userCredential = await authService.CrearUsuario(email, password, username);
 
                 await DisplayAlert("Éxito", "Registro exitoso", "OK");
 

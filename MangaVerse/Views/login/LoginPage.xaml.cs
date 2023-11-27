@@ -1,6 +1,4 @@
-using System;
 using MangaVerse.Services;
-using Firebase.Auth;
 
 namespace MangaVerse.Views
 {
@@ -21,13 +19,13 @@ namespace MangaVerse.Views
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            ConexionFirebase conexionFirebase = new ConexionFirebase();
+            AuthService authService = new AuthService();
             string email = emailEntry.Text;
             string password = passwordEntry.Text;
 
             try
             {
-                var credenciales = await conexionFirebase.CargarUsuario(email, password);
+                var credenciales = await authService.CargarUsuario(email, password);
                 var uid = credenciales.User.Uid;
 
                 await DisplayAlert("Éxito", "Inicio de sesión exitoso", "OK");
