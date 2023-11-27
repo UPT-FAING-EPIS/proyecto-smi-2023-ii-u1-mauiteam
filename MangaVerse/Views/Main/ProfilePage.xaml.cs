@@ -5,8 +5,8 @@ namespace MangaVerse.Views
     {
         private ProfileViewModel viewModel;
 
-        private readonly AuthService _authService;
-        public ProfilePage(AuthService authService)
+        private readonly IAuthService _authService;
+        public ProfilePage(IAuthService authService)
         {
             InitializeComponent();
              _authService = authService;

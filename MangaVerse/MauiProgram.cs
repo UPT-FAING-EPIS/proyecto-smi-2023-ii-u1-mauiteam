@@ -1,5 +1,6 @@
 ﻿using MangaVerse.Services;
 using MangaVerse.Services.api;
+using MangaVerse.ViewModels;
 using MangaVerse.Views;
 using Microsoft.Extensions.Logging;
 namespace MangaVerse;
@@ -21,14 +22,17 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-		builder.Services.AddTransient<AuthService>();
 		builder.Services.AddTransient<HomePage>();
 		builder.Services.AddTransient<SplashPage>();
 		builder.Services.AddTransient<LoginPage>();
+		builder.Services.AddTransient<RegisterPage>();
 		builder.Services.AddTransient<ProfilePage>();
 		builder.Services.AddTransient<DescubrePage>();
 		builder.Services.AddScoped<IMangaSearch, MangaSearch>();
 		builder.Services.AddScoped<IMangaTop, MangaTop>();
+		builder.Services.AddScoped<IAuthService, AuthService>();
+		builder.Services.AddTransient<LoginViewModel>();
+		builder.Services.AddTransient<RegisterViewModel>();
 
 		return builder.Build();
 	}

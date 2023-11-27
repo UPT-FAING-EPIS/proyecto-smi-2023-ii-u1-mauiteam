@@ -1,58 +1,33 @@
 using MangaVerse.Services;
+using MangaVerse.ViewModels;
 
 namespace MangaVerse.Views
 {
     public partial class LoginPage : ContentPage
     {
-        private readonly AuthService _authService;
+        private readonly LoginViewModel _viewModel;
+        private readonly IAuthService _authService;
 
-        public LoginPage(AuthService authService)
+        public LoginPage(LoginViewModel viewModel, IAuthService authService)
         {
             InitializeComponent();
+            _viewModel = viewModel;
             _authService = authService;
+            BindingContext = _viewModel;
         }
-
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegisterPage());
+            var registerViewModel = new RegisterViewModel(_authService);
+            await Navigation.PushAsync(new RegisterPage(registerViewModel));
         }
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            AuthService authService = new AuthService();
             string email = emailEntry.Text;
             string password = passwordEntry.Text;
 
-            try
-            {
-                var credenciales = await authService.CargarUsuario(email, password);
-                var uid = credenciales.User.Uid;
+            await _viewModel.LoginAsync(email, password);
 
-                await DisplayAlert("Éxito", "Inicio de sesión exitoso", "OK");
-
-                _authService.Login();
-                var splashPage = new SplashPage(_authService);
-
-                // Mostrar la SplashPage
-                await Navigation.PushAsync(splashPage);
-                await Task.Delay(2000);
-                await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
-            }
-            catch (Exception ex)
-            {
-                if (ex.Message.Contains("INVALID_EMAIL"))
-                {
-                    await DisplayAlert("Error", "Correo electrónico inválido", "OK");
-                }
-                else if (ex.Message.Contains("USER_NOT_FOUND") || ex.Message.Contains("WRONG_PASSWORD"))
-                {
-                    await DisplayAlert("Error", "Correo o contraseña incorrectos", "OK");
-                }
-                else
-                {
-                    await DisplayAlert("Error", "Error desconocido al iniciar sesión", "OK");
-                }
-            }
         }
     }
 }

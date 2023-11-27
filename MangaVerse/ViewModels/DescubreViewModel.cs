@@ -1,11 +1,11 @@
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using MangaVerse.Models;
 using MangaVerse.Services.api;
+using MangaVerse.ViewModels;
 
 namespace MangaVerse
 {
-    public class DescubreViewModel : INotifyPropertyChanged
+    public class DescubreViewModel : BaseViewModel
     {
 
         private readonly IMangaSearch _mangaSearch;
@@ -25,12 +25,5 @@ namespace MangaVerse
             }
         }
 
-
-        // INotifyPropertyChanged para notificar a la vista de cambios en las propiedades
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }

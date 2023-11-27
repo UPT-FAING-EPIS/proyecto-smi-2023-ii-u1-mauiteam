@@ -2,10 +2,11 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MangaVerse.Models;
 using MangaVerse.Services.api;
+using MangaVerse.ViewModels;
 
 namespace MangaVerse
 {
-    public class HomeViewModel : INotifyPropertyChanged
+    public class HomeViewModel : BaseViewModel
     {
         public ObservableCollection<CarouselItem> ImageItems { get; set; }
         public ObservableCollection<Manga> Mangas { get; set; }
@@ -70,13 +71,6 @@ namespace MangaVerse
                 chapters.Add(new Chapter { Title = $"Capítulo {i}", Number = i });
             }
             return chapters;
-        }
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
